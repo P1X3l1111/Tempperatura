@@ -43,7 +43,7 @@ export default function Temp(){
     }
 
     return(
-        <div className="w-screen h-screen border flex justify-center items-center bg-blue-900">
+        <div className="w-screen min-h-screen border flex justify-center items-center bg-blue-900">
             <div className="rounded-xl w-200 p-10 flex justify-center items-center gap-3 flex-col bg-gradient-to-br from-cyan-50 to-blue-50">
                 {celsius &&
                 <div className={`w-full py-10 flex justify-center items-center flex-col rounded-lg text-white text-3xl font-bold ${celsius<=0 && 'bg-gradient-to-r from-blue-400 to-blue-600'||celsius>35 && 'bg-gradient-to-r from-orange-500 to-red-600'|| celsius>25 && 'bg-gradient-to-r from-yellow-400 to-orange-500' || celsius>15 && 'bg-gradient-to-r from-green-400 to-green-600' ||  celsius>0 && 'bg-gradient-to-r from-cyan-400 to-blue-500' }` }>
@@ -109,4 +109,5 @@ export default function Temp(){
             </div>
         </div>
     )
+
 }
